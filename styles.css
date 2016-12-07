@@ -1307,8 +1307,8 @@ header {
     font-size: 0.8em;
     letter-spacing: 2.2px;
     font-weight: bold;
-    padding-left: 25px;
-    padding-top: 15px; }
+    text-align: right;
+    padding: 5px; }
     @media screen and (min-width: 40em) {
       header p {
         padding-left: 0.9375rem;
@@ -1330,13 +1330,16 @@ header {
       color: black;
       font: "Lato", sans-serif;
       letter-spacing: 2.2px;
-      text-align: center; }
+      text-align: center;
+      margin-top: 0;
+      margin-bottom: 5px; }
     @media screen and (min-width: 62.5em) {
       header #header-nav nav {
         flex-wrap: wrap; } }
     header #header-nav nav ul {
       display: flex;
-      justify-content: space-around; }
+      justify-content: space-around;
+      padding: 0; }
       header #header-nav nav ul li {
         list-style-type: none;
         text-decoration: none;
@@ -1347,8 +1350,7 @@ header {
     width: 20.83333%;
     float: left;
     padding-left: 0.625rem;
-    padding-right: 0.625rem;
-    padding-top: 25px; }
+    padding-right: 0.625rem; }
     @media screen and (min-width: 40em) {
       header #header-end {
         padding-left: 0.9375rem;
@@ -1361,7 +1363,9 @@ header {
       font-size: 0.8em;
       text-decoration: none;
       letter-spacing: 2.2px;
-      font-weight: bold; }
+      font-weight: bold;
+      text-align: right;
+      padding-top: 5px; }
 
 section #hero {
   max-width: 75rem;
@@ -1435,6 +1439,17 @@ section #two-image-row {
       padding-right: 0.9375rem; } }
   .lavendar-block:last-child:not(:first-child) {
     float: right; }
+  .lavendar-block p {
+    color: white;
+    font-weight: bold; }
+  .lavendar-block button {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    margin-top: 2.4rem;
+    background: transparent;
+    border: 2px solid white;
+    padding: 12px 40px; }
 
 .jasmine-block {
   width: 33.33333%;
@@ -1450,5 +1465,16 @@ section #two-image-row {
       padding-right: 0.9375rem; } }
   .jasmine-block:last-child:not(:first-child) {
     float: right; }
+  .jasmine-block p {
+    color: white;
+    font-weight: bold; }
+  .jasmine-block button {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    margin-top: 2.4rem;
+    background: transparent;
+    border: 2px solid white;
+    padding: 12px 40px; }
 
 /*# sourceMappingURL=styles.css.map */

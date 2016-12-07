@@ -1,11 +1,3 @@
- @mixin vertical-align {
-  position: relative;
-  top: 250%;
-  -webkit-transform: translateY(-250%);
-  -ms-transform: translateY(-250%);
-  transform: translateY(-250%);
-}
-
 section #two-image-row {
      @include grid-row(); 
      margin: 0px;
@@ -16,7 +8,20 @@ section #two-image-row {
           background-image: url('http://www.flowermeaning.com/flower-pics/Lavendar-Color-Meaning.jpg');
           text-align: center;
           padding: 92px;
-           
+
+          p {
+              color: white;
+              font-weight: bold;
+          }
+          button {
+              color: white;
+              font-weight: bold;
+              text-decoration: none;
+            margin-top: 2.4rem;
+            background: transparent;
+            border: 2px solid white;
+            padding: 12px 40px;
+          }   
        }
 
     .jasmine-block {
@@ -24,6 +29,21 @@ section #two-image-row {
          background-image: url('http://www.youne.com/wp-content/uploads/2013/12/jasmine-770x513.jpg');
          text-align: center;
          padding: 100px;
+
+        p {
+            color: white;
+            font-weight: bold;
+        }
+
+        button {
+            color: white;
+            font-weight: bold;
+            text-decoration: none;
+            margin-top: 2.4rem;
+            background: transparent;
+            border: 2px solid white;
+            padding: 12px 40px;
+         }
      }
 
 

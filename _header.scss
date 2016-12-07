@@ -9,14 +9,14 @@ header {
     @include grid-row();
 
                 p {
-                    @include grid-column(2.5); 
+                     @include grid-column(2.5);
                     color: red; 
                     font: $font-family-header;
                     font-size: $font-size-side-bars;
                     letter-spacing: $letter-spacing;
                     font-weight: $font-weight;
-                    padding-left: 25px;
-                    padding-top: 15px;
+                    text-align: right;
+                    padding: 5px;
                 }
 
                 #header-nav {
@@ -26,6 +26,8 @@ header {
                     font: $font-family-header;
                     letter-spacing: $letter-spacing;
                     text-align: center;
+                    margin-top: 0;
+                    margin-bottom: 5px;
                     }
 
                     nav {
@@ -35,6 +37,7 @@ header {
                         ul {
                             display: flex;
                             justify-content: space-around;
+                            padding: 0;
         
                             li {
                                 list-style-type: none;
@@ -51,7 +54,6 @@ header {
 
                 #header-end {
                     @include grid-column(2.5);
-                    padding-top: 25px;
                     a { 
                     color: black;
                     font: $font-family-header;
@@ -59,6 +61,8 @@ header {
                     text-decoration: none;
                     letter-spacing: $letter-spacing;
                     font-weight: $font-weight;
+                    text-align: right;
+                    padding-top: 5px;
                         }
                         
                     }
