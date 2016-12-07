@@ -1,0 +1,32 @@
+ @mixin vertical-align {
+  position: relative;
+  top: 250%;
+  -webkit-transform: translateY(-250%);
+  -ms-transform: translateY(-250%);
+  transform: translateY(-250%);
+}
+
+section #two-image-row {
+     @include grid-row(); 
+     margin: 0px;
+}
+
+    .lavendar-block {
+          @include grid-column(8);
+          background-image: url('http://www.flowermeaning.com/flower-pics/Lavendar-Color-Meaning.jpg');
+          text-align: center;
+          padding: 92px;
+           
+       }
+
+    .jasmine-block {
+         @include grid-column(4);
+         background-image: url('http://www.youne.com/wp-content/uploads/2013/12/jasmine-770x513.jpg');
+         text-align: center;
+         padding: 100px;
+     }
+
+
+
+
+ 
