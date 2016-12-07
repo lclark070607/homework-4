@@ -1305,9 +1305,10 @@ header {
     color: red;
     font: "Lato", sans-serif;
     font-size: 0.8em;
-    letter-spacing: 2.5px;
+    letter-spacing: 2.2px;
     font-weight: bold;
-    margin: 25px 0px; }
+    padding-left: 25px;
+    padding-top: 15px; }
     @media screen and (min-width: 40em) {
       header p {
         padding-left: 0.9375rem;
@@ -1328,8 +1329,11 @@ header {
     header #header-nav h1 {
       color: black;
       font: "Lato", sans-serif;
-      letter-spacing: 2.5px;
+      letter-spacing: 2.2px;
       text-align: center; }
+    @media screen and (min-width: 62.5em) {
+      header #header-nav nav {
+        flex-wrap: wrap; } }
     header #header-nav nav ul {
       display: flex;
       justify-content: space-around; }
@@ -1337,13 +1341,14 @@ header {
         list-style-type: none;
         text-decoration: none;
         font-size: 1em;
-        letter-spacing: 2.5px;
+        letter-spacing: 2.2px;
         font-weight: bold; }
   header #header-end {
     width: 20.83333%;
     float: left;
     padding-left: 0.625rem;
-    padding-right: 0.625rem; }
+    padding-right: 0.625rem;
+    padding-top: 25px; }
     @media screen and (min-width: 40em) {
       header #header-end {
         padding-left: 0.9375rem;
@@ -1355,8 +1360,54 @@ header {
       font: "Lato", sans-serif;
       font-size: 0.8em;
       text-decoration: none;
-      letter-spacing: 2.5px;
-      font-weight: bold;
-      margin-top: 25px; }
+      letter-spacing: 2.2px;
+      font-weight: bold; }
+
+section #hero {
+  max-width: 75rem;
+  margin-left: auto;
+  margin-right: auto;
+  background: url("http://i66.tinypic.com/izb1o1.jpg") no-repeat center center;
+  background-size: cover; }
+  section #hero::before, section #hero::after {
+    content: ' ';
+    display: table; }
+  section #hero::after {
+    clear: both; }
+
+.hero-text {
+  width: 100%;
+  float: left;
+  padding-left: 0.625rem;
+  padding-right: 0.625rem;
+  text-align: center;
+  position: relative;
+  top: 250%;
+  -webkit-transform: translateY(-250%);
+  -ms-transform: translateY(-250%);
+  transform: translateY(-250%); }
+  @media screen and (min-width: 40em) {
+    .hero-text {
+      padding-left: 0.9375rem;
+      padding-right: 0.9375rem; } }
+  .hero-text:last-child:not(:first-child) {
+    float: right; }
+  .hero-text h2 {
+    font-weight: bold;
+    font-size: 2em;
+    color: white; }
+  .hero-text p {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: white; }
+  .hero-text .button {
+    font-size: 1em;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    margin-top: 2.4rem;
+    background: transparent;
+    border: 2px solid white;
+    padding: 12px 40px; }
 
 /*# sourceMappingURL=styles.css.map */

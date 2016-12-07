@@ -1,0 +1,45 @@
+$font-weight: bold;
+
+@mixin vertical-align {
+  position: relative;
+  top: 250%;
+  -webkit-transform: translateY(-250%);
+  -ms-transform: translateY(-250%);
+  transform: translateY(-250%);
+}
+
+
+section #hero {
+    @include grid-row();
+  background: url('http://i66.tinypic.com/izb1o1.jpg') no-repeat center center;
+        background-size: cover;
+  }
+
+.hero-text {
+    @include grid-column(12);
+    text-align: center;
+    @include vertical-align;
+   
+    h2 {
+        font-weight: $font-weight;
+        font-size: 2em;
+        color: white;
+        }
+    p {
+        font-weight: $font-weight;
+        font-size: 1.2em;
+        color: white; 
+        }
+    .button {
+       font-size: 1em;
+       font-weight: $font-weight;
+        color: white;
+        text-decoration: none;
+        margin-top: 2.4rem;
+        background: transparent;
+        border: 2px solid white;
+        padding: 12px 40px;
+
+    }
+}
+
