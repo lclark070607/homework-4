@@ -1298,6 +1298,7 @@ header {
   header::after {
     clear: both; }
   header p {
+    display: none;
     width: 20.83333%;
     float: left;
     padding-left: 0.625rem;
@@ -1309,6 +1310,9 @@ header {
     font-weight: bold;
     text-align: right;
     padding: 5px; }
+    @media screen and (min-width: 31.25em) {
+      header p {
+        display: block; } }
     @media screen and (min-width: 40em) {
       header p {
         padding-left: 0.9375rem;
@@ -1316,7 +1320,7 @@ header {
     header p:last-child:not(:first-child) {
       float: right; }
   header #header-nav {
-    width: 58.33333%;
+    width: 100%;
     float: left;
     padding-left: 0.625rem;
     padding-right: 0.625rem; }
@@ -1326,6 +1330,19 @@ header {
         padding-right: 0.9375rem; } }
     header #header-nav:last-child:not(:first-child) {
       float: right; }
+    @media screen and (min-width: 31.25em) {
+      header #header-nav {
+        width: 58.33333%;
+        float: left;
+        padding-left: 0.625rem;
+        padding-right: 0.625rem; } }
+  @media screen and (min-width: 31.25em) and (min-width: 40em) {
+    header #header-nav {
+      padding-left: 0.9375rem;
+      padding-right: 0.9375rem; } }
+    @media screen and (min-width: 31.25em) {
+        header #header-nav:last-child:not(:first-child) {
+          float: right; } }
     header #header-nav h1 {
       color: black;
       font: "Lato", sans-serif;
@@ -1426,6 +1443,7 @@ section #two-image-row {
     clear: both; }
 
 .lavendar-block {
+  display: none;
   width: 66.66667%;
   float: left;
   padding-left: 0.625rem;
@@ -1433,6 +1451,9 @@ section #two-image-row {
   background-image: url("http://www.flowermeaning.com/flower-pics/Lavendar-Color-Meaning.jpg");
   text-align: center;
   padding: 92px; }
+  @media screen and (min-width: 31.25em) {
+    .lavendar-block {
+      display: block; } }
   @media screen and (min-width: 40em) {
     .lavendar-block {
       padding-left: 0.9375rem;
@@ -1452,7 +1473,7 @@ section #two-image-row {
     padding: 12px 40px; }
 
 .jasmine-block {
-  width: 33.33333%;
+  width: 100%;
   float: left;
   padding-left: 0.625rem;
   padding-right: 0.625rem;
@@ -1465,6 +1486,19 @@ section #two-image-row {
       padding-right: 0.9375rem; } }
   .jasmine-block:last-child:not(:first-child) {
     float: right; }
+  @media screen and (min-width: 31.25em) {
+    .jasmine-block {
+      width: 33.33333%;
+      float: left;
+      padding-left: 0.625rem;
+      padding-right: 0.625rem; } }
+  @media screen and (min-width: 31.25em) and (min-width: 40em) {
+    .jasmine-block {
+      padding-left: 0.9375rem;
+      padding-right: 0.9375rem; } }
+  @media screen and (min-width: 31.25em) {
+      .jasmine-block:last-child:not(:first-child) {
+        float: right; } }
   .jasmine-block p {
     color: white;
     font-weight: bold; }

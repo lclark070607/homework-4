@@ -4,11 +4,17 @@ $font-family-header: 'Lato', sans-serif;
 $font-size-side-bars: .8em;
 $letter-spacing: 2.2px;
 $font-weight: bold;
+$large-screen: 500px;
+
 
 header {
     @include grid-row();
 
                 p {
+                    display: none;
+                    @include breakpoint (500px) {
+                        display: block;
+                    }
                      @include grid-column(2.5);
                     color: red; 
                     font: $font-family-header;
@@ -20,7 +26,11 @@ header {
                 }
 
                 #header-nav {
+                    @include grid-column(12);
+                    @include breakpoint($large-screen){
                     @include grid-column(7);
+                }
+                 
                     h1 {
                     color: black;
                     font: $font-family-header;
